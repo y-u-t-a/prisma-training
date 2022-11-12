@@ -1,7 +1,7 @@
 import { PrismaClient } from '@prisma/client'
 import { ActorSearchCondition, ActorSearchConditionBuilder } from './actor-search-condition'
 
-async function searchActor(input: ActorSearchCondition) {
+export async function searchActor(input: ActorSearchCondition) {
   const prisma = new PrismaClient()
   const searchCondition = new ActorSearchConditionBuilder(input).build()
   const actors = await prisma.actor.findMany({
