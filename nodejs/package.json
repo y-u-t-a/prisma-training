@@ -11,5 +11,8 @@
   },
   "prisma": {
     "schema": "../prisma/schema.prisma"
+  },
+  "scripts": {
+    "test": "vitest run"
   }
 }
