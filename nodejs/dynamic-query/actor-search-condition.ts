@@ -13,7 +13,6 @@ export class ActorSearchConditionBuilder {
   private readonly lastUpdateFrom?: Date
   private readonly lastUpdateTo?: Date
 
-
   constructor(init: ActorSearchCondition) {
     this.firstName = init.firstName?.trim() || ""
     this.actorIdList = init.actorIdList || []
